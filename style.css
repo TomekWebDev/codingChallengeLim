@@ -1,0 +1,132 @@
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-image: url(background.jpg);
+  background-size: cover;
+  color: white;
+}
+
+/* div Contenitore nero - spazi e formattazione */
+
+.blackContainer{
+  background-color: rgba(0,0,0,0.5);
+  margin-left: 18%;
+  margin-right: 18%; /* spazi rispetto allo screen intero*/
+  margin-top: 3%;
+  border-radius: 10px
+}
+
+/* logo e testo - formattazione */
+
+header{
+  font-weight: 600;
+  font-size: 25px;
+  color: #22dc24;
+}
+
+#logoImage, #logoText{
+  display: block; /* rendere img e testo block per poterli muovere*/
+  text-align: center;
+}
+
+#logoImage{
+  width: 20%;
+  height: auto;
+  margin: auto; /* centrare logo */
+  padding-top: 7%; /* spazio in alto rispetto al contenitore nero*/
+}
+
+/* dare stessi margini alla sezione dei bottoni (al contenitore dei bottoni) e alle sezioni con le info degli scooter rispetto al contenitore nero */
+
+nav, section{
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+/* formattazione contenitore verde dei bottoni */
+
+.buttonsBackground{
+  background-color: #22dc24;
+  display: flex;
+  justify-content: center; /* usato con display flex per poter allineare al centro i 3 bottoni */
+  padding: 1%; /* padding usato per dare spazio in alto e in basso */
+}
+
+/* formattazione bottoni (va specificato il font) */
+
+button{
+  margin-left: : 0.5%;
+  margin-right: 0.5%; /* tenere spazio tra i bottoni (con flex non lo avevano più) */
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* formattazione testo SOLO nome scooter */
+
+section > .scooterName{
+  font-weight: 600;
+}
+
+/* formattazione testo: indirizzo, distanza, stato carica e percentuale batteria */
+
+section > .scooterPosition, .batteryState, .batteryPercentage{
+  font-weight: 300;
+  font-size: 12px;
+}
+
+/* per dare sempre spazio all'ultimo elemento rispetto al contenitore nero*/
+
+main:last-child{
+  padding-bottom: 7%; /* stesso spazio che ha il top del logo dal contenitore*/
+}
+
+/* dare spazio ai div che contengono tutte le info di uno scooter */
+
+.availableScooter{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/* aggiunta simboli da css - test selettori*/
+
+.address:before{
+  content: "↦ "
+}
+
+.address:after{
+  content: " - "
+}
+
+.distance:after{
+  content: " da te"
+}
+
+/* shape di tutte le barre a prescindere dalla lunghezza */
+
+.batteryBarShape{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  padding: 0.3%; /* spessore della barra  */
+}
+
+/* colore e lunghezza delle barre batteria (da sostituire con dati server come input) */
+
+.battery1{
+  background-color: #1ba11c;
+  margin-right: 10%;
+}
+
+.battery2{
+  background-color: #ebbe22;
+  margin-right: 50%;
+}
+
+.battery3{
+  background-color: #c20d0d;
+  margin-right: 80%;
+}
+
+/* Made by TM WebDev */

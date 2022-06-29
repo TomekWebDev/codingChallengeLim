@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Esercizio Lim</title>
+    <!-- Font Google (Poppins 300,400,600 - light-regular-semibold) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- contenitore nero -->
+    <div class="blackContainer">
+      <header>
+        <!-- logo img e payoff span -->
+        <img class="logo-payoff" id="logoImage"src="logo.png">
+        <span class="logo-payoff" id="logoText">Taking Booleaners from A to B</span>
+      </header>
+      <nav>
+        <!-- contenitore bottoni e bottoni -->
+        <div class="buttonsBackground">
+          <button type="button">Prenota</button>
+          <button type="button">Termina Prenotazione</button>
+          <button type="button">Accendi Luci</button>
+        </div>
+      </nav>
+      <main>
+           <!-- sezione per ogni monopattino disponibile -->
+           <!-- info su 4 righe -->
+           <!-- 1: checkbox e nome monopattino
+                2: simbolo, indirizzo, distanza dallo user (teoricamente da sistema)
+                3: "stato di carica"
+                4: barra batteria colorata con percentuale -->
+        <section class="availableScooter">
+             <!-- riga 1 -->
+             <div class="scooterName">
+               <input type="checkbox" name="select">
+               <!-- nome dello scooter Monopattino + numero/codice seriale (teoricamente dal sistema) -->
+               <span class="scooter">Monopattino <span class="scooterSerial">X</span></span>
+             </div>
+             <!-- riga 2 -->
+             <div class="scooterPosition">
+               <!-- simbolo + indirizzo (da sistema) + distanza da te (da sistema) -->
+               <!-- simbolo, dash e "da te" inserite da css (da linea 92) -->
+               <span class="address">Via X</span><span class="distance">200m</span>
+             </div>
+             <!-- riga 3 -->
+             <div class="batteryState">
+               <span>stato carica</span>
+             </div>
+             <!-- riga 4 -->
+             <!-- ci sono due class per poter tenere la shape delle barre -->
+             <div class="battery1 batteryBarShape">
+               <span class="batteryPercentage">90%</span>
+             </div>
+        </section>
+        <!-- scooter 2 -->
+        <section class="availableScooter">
+
+             <div class="scooterName">
+               <input type="checkbox" name="select">
+               <span class="scooter">Monopattino <span class="scooterSerial">Y</span></span>
+             </div>
+             <div class="scooterPosition">
+               <span class="address">Via Y</span><span class="distance">400m</span>
+             </div>
+             <div class="batteryState">
+               <span>stato carica</span>
+             </div>
+             <div class="battery2 batteryBarShape">
+               <span class="batteryPercentage">50%</span>
+             </div>
+        </section>
+        <!-- scooter 3 -->
+        <section class="availableScooter">
+
+             <div class="scooterName">
+               <input type="checkbox" name="select">
+               <span class="scooter">Monopattino <span class="scooterSerial">Z</span></span>
+             </div>
+             <div class="scooterPosition">
+               <span class="address">Via Z</span><span class="distance">600m</span>
+             </div>
+             <div class="batteryState">
+               <span>stato carica</span>
+             </div>
+             <div class="battery3 batteryBarShape">
+               <span class="batteryPercentage">20%</span>
+             </div>
+        </section>
+      </main>
+    </div>
+    <!-- no footer -->
+  </body>
+</html>
+
+<!-- Made by TM WebDev -->
